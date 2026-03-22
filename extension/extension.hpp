@@ -14,9 +14,12 @@ public: // IClientListener
 	virtual void OnClientDisconnecting(int) override;
 public:
 	SendProp* m_iClass;
+	SendProp* m_iDClass;
 	SendVarProxyFn m_iClass_Proxy;
+	SendVarProxyFn m_iDClass_Proxy;
 };
 
 void ClassProxy_m_iClass_Fn(const SendProp*, const void*, const void*, DVariant*, int, int);
+void ClassProxy_m_iDesiredClass_Fn(const SendProp*, const void*, const void*, DVariant*, int, int);
 extern const sp_nativeinfo_t g_NativesInfo[];
 #endif

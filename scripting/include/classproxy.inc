@@ -1,8 +1,7 @@
-#if !defined _tf2_included
-#error "You must #include <tf2> before #include <classproxy>"
-#endif
 #if !defined _CLASSPROXY_EXTENSION_INC_
 #define _CLASSPROXY_EXTENSION_INC_
+
+#include <tf2>
 
 /**
 	* Sets the client's tf2 class to proxy to clients.
@@ -11,6 +10,7 @@
 	* @error                  Client index is invalid, or not in game
 */
 void ClassProxy_m_iClass_Set(int client, TFClassType classType);
+void ClassProxy_m_iDesiredPlayerClass_Set(int client, TFClassType classType);
 
 public Extension __ext_classproxy = 
 {
