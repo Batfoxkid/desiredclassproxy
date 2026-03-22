@@ -5,6 +5,7 @@ builder.SetBuildFolder('package')
 
 folder_list = [
   'addons/sourcemod/extensions',
+  'addons/sourcemod/scripting/include',
 ]
 
 if 'x86_64' in Extension.target_archs:
