@@ -122,14 +122,14 @@ jobs:
 
       - name: Upload artifact
         if: github.event_name == 'push' && (startsWith(matrix.os, 'ubuntu-18.04') || startsWith(matrix.os, 'windows-2019'))
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@master
         with:
           name: DesiredClassProxy_${{ runner.os }}
           path: ${{ github.workspace }}/DesiredClassProxy/build/extension
       
       - name: Upload artifact
         if: github.event_name == 'push' && strategy.job-index == 0
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@master
         with:
           name: DesiredClassProxy_versioning_files
           path: ${{ github.workspace }}/DesiredClassProxy/build/includes
