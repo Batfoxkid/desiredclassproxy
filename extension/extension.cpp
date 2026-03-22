@@ -103,7 +103,7 @@ void ClassProxy_m_iDesiredClass_Fn(const SendProp* pProp, const void* pStructBas
 	g_Ext.m_iDClass_Proxy(pProp, pStructBase, pData, pOut, iElement, objectID);
 }
 
-cell_t ClassProxy_m_iDesiredClass_Set(IPluginContext* pContext, const cell_t* params)
+cell_t ClassProxy_m_iDesiredPlayerClass_Set(IPluginContext* pContext, const cell_t* params)
 {
 	IGamePlayer* player = playerhelpers->GetGamePlayer(params[1]);
 	if (player == nullptr || params[1] <= 0 || params[1] > 101)
