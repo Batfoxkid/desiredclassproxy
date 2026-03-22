@@ -5,7 +5,6 @@ projectName = 'desiredclassproxy'
 
 sourceFiles = [
   'extension.cpp',
-  os.path.join(Extension.sm_root, 'public', 'smsdk_ext.cpp'),
 ]
 
 project = builder.LibraryProject(projectName)
