@@ -26,7 +26,6 @@ bool ClassProxy::SDK_OnLoad(char* error, size_t maxlen, bool late)
 	this->m_iClass_Proxy = this->m_iClass->GetProxyFn();
 	this->m_iClass->SetProxyFn(ClassProxy_m_iClass_Fn);
 
-	info;
 	if (!gamehelpers->FindSendPropInfo("CTFPlayer", "m_iDesiredPlayerClass", &info))
 	{
 		std::strncpy(error, "Couldn't find network property CTFPlayer::m_iDesiredPlayerClass!", maxlen);
