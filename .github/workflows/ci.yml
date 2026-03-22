@@ -66,7 +66,7 @@ jobs:
         shell: bash
         run: |
           for sdk in tf2; do
-            git clone --depth 1 --branch $sdk https://github.com/alliedmodders/hl2sdk cache/hl2sdk-$sdk
+            git clone --depth 1 --branch $sdk https://github.com/TF2-DMB/hl2sdk-tf2 cache/hl2sdk-$sdk
           done
 
       - name: Checkout AMBuild

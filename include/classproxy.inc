@@ -14,8 +14,8 @@ void ClassProxy_m_iDesiredPlayerClass_Set(int client, TFClassType classType);
 
 public Extension __ext_classproxy = 
 {
-	name = "classproxy",
-	file = "classproxy.ext",
+	name = "desiredclassproxy",
+	file = "desiredclassproxy.ext",
 	autoload = 1,
 #if defined REQUIRE_EXTENSIONS
 	required = 1,
